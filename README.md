@@ -1,2 +1,1 @@
-Tet (retrait du s)
-Et modification pour ma PR1
+Dans ce répertoire je stocke mes test de projet Python
