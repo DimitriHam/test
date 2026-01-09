@@ -17,11 +17,11 @@ while saisie_joueur not in {"1", "2", "3"}:
 saisie_joueur = int(saisie_joueur)
 resultat = "défaite"
 match saisie_joueur - saisie_ordinateur:
-    case 0:
+    case 0: #Les deux joueurs ont saisi la même chose
         resultat = "match nul"
-    case 1:
+    case 1: #feuille bat la pierre ou ciseaux battent la feuille
         resultat = "victoire"
-    case -2:
+    case -2: #Pierre bat les ciseaux
         resultat = "victoire"
 
 #Affichage du résultat
