@@ -1,0 +1,35 @@
+from random import *
+
+liste_choix = [1, 2, 3]
+liste_valeurs = ["Pierre", "Feuille", "Ciseaux"]
+
+#Tirage aléatoire du choix ordinateur (pas de réflexion)
+saisie_ordinateur = choice(liste_choix)
+
+#Saisie du choix du joueur
+saisie_joueur = input("Quel est votre choix : \n"+"Tapez 1 pour pierre \n"+"Tapez 2 pour feuille \n"+"Tapez 3 pour ciseaux \n")
+while saisie_joueur not in {"1", "2", "3"}:    
+    print ("\n\nVous avez saisi", saisie_joueur)
+    print("\nRelisez la consigne. \nVous devez saisir un chiffre compris entre 1 et 3 \n")
+    saisie_joueur = input("Quel est votre choix : \n"+"Tapez 1 pour pierre \n"+"Tapez 2 pour feuille \n"+"Tapez 3 pour ciseaux \n")
+
+#Calcul du résultat
+saisie_joueur = int(saisie_joueur)
+resultat = "défaite"
+match saisie_joueur - saisie_ordinateur:
+    case 0:
+        resultat = "match nul"
+    case 1:
+        resultat = "victoire"
+    case -2:
+        resultat = "victoire"
+
+#Affichage du résultat
+print("\n\nVous avez choisi", liste_valeurs[saisie_joueur-1])
+print("J'avais choisi", liste_valeurs[saisie_ordinateur-1])
+if resultat == "match nul":
+    print("Il y a donc match nul")
+elif resultat == "victoire":
+    print("BRAVO tu as gagné mais pourras-tu renouveler l'exploit ?")
+else:
+    print("PERDU l'intelligence artificielle domine toujours le monde !")
