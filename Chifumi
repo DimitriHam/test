@@ -1,4 +1,4 @@
-from random import *
+from random import choice
 
 liste_choix = [1, 2, 3]
 liste_valeurs = ["Pierre", "Feuille", "Ciseaux"]
