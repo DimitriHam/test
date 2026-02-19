@@ -1,6 +1,9 @@
 # DEPENDANCES
 # Installation du package Requests pour requêter en HTTP : Python -m pip install requests
 # Installation du package BeautifullSoup pour parser du HTML : Python -m pip install beautifulsoup4
+# Documentation Beautifull Soup : https://www.crummy.com/software/BeautifulSoup/
+# Installation du package Newspaper3k pour identifier les articles sur des sites d'information : Python -m pip install newspaper3k
+# Documentation : https://scrapeops.io/python-web-scraping-playbook/newspaper3k/ et https://pypi.org/project/newspaper3k/ 
 
 # FICHIERS
 # Pour la saisie des mots clés et sites les fichiers utilisés pour stocker les données saisies sont : 
